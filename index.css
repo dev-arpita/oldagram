@@ -1,4 +1,121 @@
+html,
 body {
     margin: 0;
+    padding: 0;
+    background: lightgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+    /* border: 5px solid #252525; */
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 10px 0 20px;
+    background: #fff;
+    box-shadow: 0 0 10px #252525;
+}
+
+img {
+    width: 100%;
+}
+
+/* utility class */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* Typography */
+
+h2,
+p {
+    margin: 0;
+}
+
+h2 {
     font-size: 18px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* images layout */
+
+.logo-img,
+.logo-img__user,
+.profile-img {
+    border-radius: 50%;
+}
+
+.logo-img {
+    width: 100px;
+}
+
+.logo-img__user,
+.profile-img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/*Lay-outs*/
+
+.user-profile {
+    justify-content: start;
+    margin-top: 30px;
+}
+
+.location {
+    margin-top: 2px;
+}
+
+header {
+    border-bottom: 2px solid #E5E4E2;
+}
+
+.icons-container {
+    justify-content: start;
+}
+
+.icon-container {
+    border-radius: 50%;
+    padding: 10px 0;
+    margin-left: 8px;
+}
+
+
+.comment,
+.user-profile,
+.logo-img {
+    padding: 10px 0;
+    padding-left: 10px;
+}
+
+.likes {
+    padding: 5px 0;
+    padding-left: 10px;
+}
+
+.icon {
+    width: 30px;
+    transition: border 0.15ms ease-in-out;
+}
+
+.icon:hover,
+.icon:focus {
+    border-bottom: 5px dotted #252525 ;
+}
+
+
+.userName {
+    font-weight: 600;
+    font-size: 19px;
 }
